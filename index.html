@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="script.js" async></script>
+</head>
+<body>
+    
+
+    <div class="overlay-text visible">Click To Start</div>
+    <div id="game-over-text" class="overlay-text">
+        Game Over
+        <span class="overlay-text-small">Click To Restart</span>
+    </div>
+    <div id="victory-text" class="overlay-text">
+        Well Done!
+        <span class="overlay-text-small">Click To Restart</span>
+    </div>
+
+    <h1>Match the Cards</h1>
+    <div class="game-container">
+        <div class="game-info-container">
+            <div class="game-info">Time: <span id="time-remaining">100</span></div>
+            <div class="game-info">Flips: <span id="flips">0</span></div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="web-corner top-left" src="images/web-corner.png">
+                <img class="web-corner top-right" src="images/web-corner.png">
+                <img class="web-corner bottom-left" src="images/web-corner.png">
+                <img class="web-corner bottom-right" src="images/web-corner.png">
+
+                <img class="web-center" src="images/spider-web.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="web-corner top-left" src="images/cobweb.png">
+                <img class="web-corner top-right" src="images/cobweb.png">
+                <img class="web-corner bottom-left" src="images/cobweb.png">
+                <img class="web-corner bottom-right" src="images/cobweb.png">
+
+                <img class="card-value" src="images/spider.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="web-corner top-left" src="images/web-corner.png">
+                <img class="web-corner top-right" src="images/web-corner.png">
+                <img class="web-corner bottom-left" src="images/web-corner.png">
+                <img class="web-corner bottom-right" src="images/web-corner.png">
+
+                <img class="web-center" src="images/spider-web.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="web-corner top-left" src="images/cobweb.png">
+                <img class="web-corner top-right" src="images/cobweb.png">
+                <img class="web-corner bottom-left" src="images/cobweb.png">
+                <img class="web-corner bottom-right" src="images/cobweb.png">
+
+                <img class="card-value" src="images/spider.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="web-corner top-left" src="images/web-corner.png">
+                <img class="web-corner top-right" src="images/web-corner.png">
+                <img class="web-corner bottom-left" src="images/web-corner.png">
+                <img class="web-corner bottom-right" src="images/web-corner.png">
+
+                <img class="web-center" src="images/spider-web.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="web-corner top-left" src="images/cobweb.png">
+                <img class="web-corner top-right" src="images/cobweb.png">
+                <img class="web-corner bottom-left" src="images/cobweb.png">
+                <img class="web-corner bottom-right" src="images/cobweb.png">
+
+                <img class="card-value" src="images/spider2.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="web-corner top-left" src="images/web-corner.png">
+                <img class="web-corner top-right" src="images/web-corner.png">
+                <img class="web-corner bottom-left" src="images/web-corner.png">
+                <img class="web-corner bottom-right" src="images/web-corner.png">
+
+                <img class="web-center" src="images/spider-web.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="web-corner top-left" src="images/cobweb.png">
+                <img class="web-corner top-right" src="images/cobweb.png">
+                <img class="web-corner bottom-left" src="images/cobweb.png">
+                <img class="web-corner bottom-right" src="images/cobweb.png">
+
+                <img class="card-value" src="images/spider2.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="web-corner top-left" src="images/web-corner.png">
+                <img class="web-corner top-right" src="images/web-corner.png">
+                <img class="web-corner bottom-left" src="images/web-corner.png">
+                <img class="web-corner bottom-right" src="images/web-corner.png">
+
+                <img class="web-center" src="images/spider-web.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="web-corner top-left" src="images/cobweb.png">
+                <img class="web-corner top-right" src="images/cobweb.png">
+                <img class="web-corner bottom-left" src="images/cobweb.png">
+                <img class="web-corner bottom-right" src="images/cobweb.png">
+
+                <img class="card-value" src="images/spider3.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="web-corner top-left" src="images/web-corner.png">
+                <img class="web-corner top-right" src="images/web-corner.png">
+                <img class="web-corner bottom-left" src="images/web-corner.png">
+                <img class="web-corner bottom-right" src="images/web-corner.png">
+
+                <img class="web-center" src="images/spider-web.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="web-corner top-left" src="images/cobweb.png">
+                <img class="web-corner top-right" src="images/cobweb.png">
+                <img class="web-corner bottom-left" src="images/cobweb.png">
+                <img class="web-corner bottom-right" src="images/cobweb.png">
+
+                <img class="card-value" src="images/spider3.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="web-corner top-left" src="images/web-corner.png">
+                <img class="web-corner top-right" src="images/web-corner.png">
+                <img class="web-corner bottom-left" src="images/web-corner.png">
+                <img class="web-corner bottom-right" src="images/web-corner.png">
+
+                <img class="web-center" src="images/spider-web.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="web-corner top-left" src="images/cobweb.png">
+                <img class="web-corner top-right" src="images/cobweb.png">
+                <img class="web-corner bottom-left" src="images/cobweb.png">
+                <img class="web-corner bottom-right" src="images/cobweb.png">
+
+                <img class="card-value" src="images/spider4.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="web-corner top-left" src="images/web-corner.png">
+                <img class="web-corner top-right" src="images/web-corner.png">
+                <img class="web-corner bottom-left" src="images/web-corner.png">
+                <img class="web-corner bottom-right" src="images/web-corner.png">
+
+                <img class="web-center" src="images/spider-web.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="web-corner top-left" src="images/cobweb.png">
+                <img class="web-corner top-right" src="images/cobweb.png">
+                <img class="web-corner bottom-left" src="images/cobweb.png">
+                <img class="web-corner bottom-right" src="images/cobweb.png">
+
+                <img class="card-value" src="images/spider4.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="web-corner top-left" src="images/web-corner.png">
+                <img class="web-corner top-right" src="images/web-corner.png">
+                <img class="web-corner bottom-left" src="images/web-corner.png">
+                <img class="web-corner bottom-right" src="images/web-corner.png">
+
+                <img class="web-center" src="images/spider-web.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="web-corner top-left" src="images/cobweb.png">
+                <img class="web-corner top-right" src="images/cobweb.png">
+                <img class="web-corner bottom-left" src="images/cobweb.png">
+                <img class="web-corner bottom-right" src="images/cobweb.png">
+
+                <img class="card-value" src="images/spider5.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="web-corner top-left" src="images/web-corner.png">
+                <img class="web-corner top-right" src="images/web-corner.png">
+                <img class="web-corner bottom-left" src="images/web-corner.png">
+                <img class="web-corner bottom-right" src="images/web-corner.png">
+
+                <img class="web-center" src="images/spider-web.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="web-corner top-left" src="images/cobweb.png">
+                <img class="web-corner top-right" src="images/cobweb.png">
+                <img class="web-corner bottom-left" src="images/cobweb.png">
+                <img class="web-corner bottom-right" src="images/cobweb.png">
+
+                <img class="card-value" src="images/spider5.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="web-corner top-left" src="images/web-corner.png">
+                <img class="web-corner top-right" src="images/web-corner.png">
+                <img class="web-corner bottom-left" src="images/web-corner.png">
+                <img class="web-corner bottom-right" src="images/web-corner.png">
+
+                <img class="web-center" src="images/spider-web.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="web-corner top-left" src="images/cobweb.png">
+                <img class="web-corner top-right" src="images/cobweb.png">
+                <img class="web-corner bottom-left" src="images/cobweb.png">
+                <img class="web-corner bottom-right" src="images/cobweb.png">
+
+                <img class="card-value" src="images/spider6.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="web-corner top-left" src="images/web-corner.png">
+                <img class="web-corner top-right" src="images/web-corner.png">
+                <img class="web-corner bottom-left" src="images/web-corner.png">
+                <img class="web-corner bottom-right" src="images/web-corner.png">
+
+                <img class="web-center" src="images/spider-web.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="web-corner top-left" src="images/cobweb.png">
+                <img class="web-corner top-right" src="images/cobweb.png">
+                <img class="web-corner bottom-left" src="images/cobweb.png">
+                <img class="web-corner bottom-right" src="images/cobweb.png">
+
+                <img class="card-value" src="images/spider6.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="web-corner top-left" src="images/web-corner.png">
+                <img class="web-corner top-right" src="images/web-corner.png">
+                <img class="web-corner bottom-left" src="images/web-corner.png">
+                <img class="web-corner bottom-right" src="images/web-corner.png">
+
+                <img class="web-center" src="images/spider-web.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="web-corner top-left" src="images/cobweb.png">
+                <img class="web-corner top-right" src="images/cobweb.png">
+                <img class="web-corner bottom-left" src="images/cobweb.png">
+                <img class="web-corner bottom-right" src="images/cobweb.png">
+
+                <img class="card-value" src="images/spider7.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="web-corner top-left" src="images/web-corner.png">
+                <img class="web-corner top-right" src="images/web-corner.png">
+                <img class="web-corner bottom-left" src="images/web-corner.png">
+                <img class="web-corner bottom-right" src="images/web-corner.png">
+
+                <img class="web-center" src="images/spider-web.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="web-corner top-left" src="images/cobweb.png">
+                <img class="web-corner top-right" src="images/cobweb.png">
+                <img class="web-corner bottom-left" src="images/cobweb.png">
+                <img class="web-corner bottom-right" src="images/cobweb.png">
+
+                <img class="card-value" src="images/spider7.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="web-corner top-left" src="images/web-corner.png">
+                <img class="web-corner top-right" src="images/web-corner.png">
+                <img class="web-corner bottom-left" src="images/web-corner.png">
+                <img class="web-corner bottom-right" src="images/web-corner.png">
+
+                <img class="web-center" src="images/spider-web.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="web-corner top-left" src="images/cobweb.png">
+                <img class="web-corner top-right" src="images/cobweb.png">
+                <img class="web-corner bottom-left" src="images/cobweb.png">
+                <img class="web-corner bottom-right" src="images/cobweb.png">
+
+                <img class="card-value" src="images/spider8.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="web-corner top-left" src="images/web-corner.png">
+                <img class="web-corner top-right" src="images/web-corner.png">
+                <img class="web-corner bottom-left" src="images/web-corner.png">
+                <img class="web-corner bottom-right" src="images/web-corner.png">
+
+                <img class="web-center" src="images/spider-web.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="web-corner top-left" src="images/cobweb.png">
+                <img class="web-corner top-right" src="images/cobweb.png">
+                <img class="web-corner bottom-left" src="images/cobweb.png">
+                <img class="web-corner bottom-right" src="images/cobweb.png">
+
+                <img class="card-value" src="images/spider8.png">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
